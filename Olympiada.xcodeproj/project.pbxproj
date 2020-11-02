@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DEC6DFFA254DC22D000D40BA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEC6DFF9254DC22D000D40BA /* main.cpp */; };
+		DEC6E02F254FD2D8000D40BA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = DEC6E02E254FD2D8000D40BA /* main.c */; };
+		DEC6E03B254FD979000D40BA /* vector.c in Sources */ = {isa = PBXBuildFile; fileRef = DEC6E037254FD6C3000D40BA /* vector.c */; };
+		DEC6E03D254FD97C000D40BA /* krizovatky.c in Sources */ = {isa = PBXBuildFile; fileRef = DEC6E032254FD3F1000D40BA /* krizovatky.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,17 @@
 
 /* Begin PBXFileReference section */
 		DEC6DFF6254DC22D000D40BA /* Olympiada */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Olympiada; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEC6DFF9254DC22D000D40BA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DEC6DFF9254DC22D000D40BA /* krizovatky.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = krizovatky.cpp; sourceTree = "<group>"; };
+		DEC6E00A254DCC3C000D40BA /* Olympiada-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Olympiada-Bridging-Header.h"; sourceTree = "<group>"; };
+		DEC6E00B254DCC3C000D40BA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DEC6E013254E1D09000D40BA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DEC6E021254EC6AC000D40BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DEC6E028254EC76C000D40BA /* Krizovatky.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Krizovatky.m; sourceTree = "<group>"; };
+		DEC6E02E254FD2D8000D40BA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		DEC6E032254FD3F1000D40BA /* krizovatky.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = krizovatky.c; sourceTree = "<group>"; };
+		DEC6E037254FD6C3000D40BA /* vector.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vector.c; sourceTree = "<group>"; };
+		DEC6E038254FD772000D40BA /* krizovatky.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = krizovatky.h; sourceTree = "<group>"; };
+		DEC6E03A254FD976000D40BA /* vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,51 @@
 		DEC6DFF8254DC22D000D40BA /* Olympiada */ = {
 			isa = PBXGroup;
 			children = (
-				DEC6DFF9254DC22D000D40BA /* main.cpp */,
+				DEC6E02D254FD2C8000D40BA /* C */,
+				DEC6E020254EC693000D40BA /* Objc */,
+				DEC6E01D254EC677000D40BA /* C++ */,
+				DEC6E01F254EC685000D40BA /* Swift */,
+				DEC6E00A254DCC3C000D40BA /* Olympiada-Bridging-Header.h */,
 			);
 			path = Olympiada;
+			sourceTree = "<group>";
+		};
+		DEC6E01D254EC677000D40BA /* C++ */ = {
+			isa = PBXGroup;
+			children = (
+				DEC6E013254E1D09000D40BA /* main.cpp */,
+				DEC6DFF9254DC22D000D40BA /* krizovatky.cpp */,
+			);
+			path = "C++";
+			sourceTree = "<group>";
+		};
+		DEC6E01F254EC685000D40BA /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				DEC6E00B254DCC3C000D40BA /* main.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		DEC6E020254EC693000D40BA /* Objc */ = {
+			isa = PBXGroup;
+			children = (
+				DEC6E021254EC6AC000D40BA /* main.m */,
+				DEC6E028254EC76C000D40BA /* Krizovatky.m */,
+			);
+			path = Objc;
+			sourceTree = "<group>";
+		};
+		DEC6E02D254FD2C8000D40BA /* C */ = {
+			isa = PBXGroup;
+			children = (
+				DEC6E02E254FD2D8000D40BA /* main.c */,
+				DEC6E038254FD772000D40BA /* krizovatky.h */,
+				DEC6E032254FD3F1000D40BA /* krizovatky.c */,
+				DEC6E03A254FD976000D40BA /* vector.h */,
+				DEC6E037254FD6C3000D40BA /* vector.c */,
+			);
+			path = C;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,6 +146,7 @@
 				TargetAttributes = {
 					DEC6DFF5254DC22D000D40BA = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -118,7 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEC6DFFA254DC22D000D40BA /* main.cpp in Sources */,
+				DEC6E03B254FD979000D40BA /* vector.c in Sources */,
+				DEC6E03D254FD97C000D40BA /* krizovatky.c in Sources */,
+				DEC6E02F254FD2D8000D40BA /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,20 +296,39 @@
 		DEC6DFFE254DC22D000D40BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4L2M42FLR;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Olympiada/Olympiada-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		DEC6DFFF254DC22D000D40BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4L2M42FLR;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Olympiada/Olympiada-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
