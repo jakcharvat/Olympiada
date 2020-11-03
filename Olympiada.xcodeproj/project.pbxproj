@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE6AF1482550214600699C9B /* set.c in Sources */ = {isa = PBXBuildFile; fileRef = DE6AF1472550214600699C9B /* set.c */; };
 		DEC6E02F254FD2D8000D40BA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = DEC6E02E254FD2D8000D40BA /* main.c */; };
 		DEC6E03B254FD979000D40BA /* vector.c in Sources */ = {isa = PBXBuildFile; fileRef = DEC6E037254FD6C3000D40BA /* vector.c */; };
 		DEC6E03D254FD97C000D40BA /* krizovatky.c in Sources */ = {isa = PBXBuildFile; fileRef = DEC6E032254FD3F1000D40BA /* krizovatky.c */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DE6AF1462550214600699C9B /* set.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = set.h; sourceTree = "<group>"; };
+		DE6AF1472550214600699C9B /* set.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = set.c; sourceTree = "<group>"; };
 		DEC6DFF6254DC22D000D40BA /* Olympiada */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Olympiada; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC6DFF9254DC22D000D40BA /* krizovatky.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = krizovatky.cpp; sourceTree = "<group>"; };
 		DEC6E00A254DCC3C000D40BA /* Olympiada-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Olympiada-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				DEC6E032254FD3F1000D40BA /* krizovatky.c */,
 				DEC6E03A254FD976000D40BA /* vector.h */,
 				DEC6E037254FD6C3000D40BA /* vector.c */,
+				DE6AF1462550214600699C9B /* set.h */,
+				DE6AF1472550214600699C9B /* set.c */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			files = (
 				DEC6E03B254FD979000D40BA /* vector.c in Sources */,
 				DEC6E03D254FD97C000D40BA /* krizovatky.c in Sources */,
+				DE6AF1482550214600699C9B /* set.c in Sources */,
 				DEC6E02F254FD2D8000D40BA /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
